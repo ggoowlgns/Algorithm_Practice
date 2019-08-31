@@ -32,13 +32,3 @@ hs_err_pid*
 *.iml
 out
 gen
-.gitignore
-.idea/description.html
-.idea/misc.xml
-.idea/modules.xml
-.idea/project-template.xml
-.idea/uiDesigner.xml
-.idea/workspace.xml
-Programmers.iml
-out/
-src/hufs/
