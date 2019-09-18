@@ -56,4 +56,48 @@ public class QueuePractice {
     }
 
 
+    /**
+     * Queue에 넣을 객체 - Node
+     */
+    class Node implements Comparable<Node>{
+        private String UUID;
+        private String parentUUID;
+        private double G;
+        private double H;
+
+        public Node(String UUID, double G, double H) {
+            this.UUID = UUID;
+            this.parentUUID = null;
+            this.G = G;
+            this.H = H;
+        }
+
+        public String getUUID() {
+            return UUID;
+        }
+
+        public String getParentUUID() {
+            return parentUUID;
+        }
+        public double getF() { return G + H; }
+        public double getG() {
+            return G;
+        }
+
+        public double getH() {
+            return H;
+        }
+
+        @Override
+        public int compareTo(Node target) {
+            if (this.getF() > target.getF()) {
+                return 1;
+            } else if (this.getF() < target.getF()) {
+                return -1;
+            }
+
+            return 0;
+        }
+    }
+
 }
