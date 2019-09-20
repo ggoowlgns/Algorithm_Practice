@@ -105,8 +105,8 @@ public class MissedClass {
      Prefix
 
      s = [0]  * n
+`     # S[i] = X[0] + X[1] + ... + X[i]
      for i in range(n):
-     # S[i] = X[0] + X[1] + ... + X[i]
      for j in range(i+1):
      S[i] = S[i] + X[j]
      T(n) = O(n^2)
